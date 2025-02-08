@@ -1,0 +1,114 @@
+﻿<Window x:Class="MCXTopics.OthersDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MCXTopics"
+        mc:Ignorable="d"
+        Title="OthersDetails" Height="500" Width="800"  WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/purple.jpg" />
+    </Window.Background>
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="Transparent" />
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="Transparent" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!--ROWS-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="287.54" />
+            <RowDefinition Height="162.46" />
+
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <!-- COLUMNS -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!--Topic-->
+        <TextBlock HorizontalAlignment="Left" Margin="49,107,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TOPIC" VerticalAlignment="Top" Width="126" Height="27" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="44,134,1043,114" Grid.Column="1" Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="TopicTextBlock"
+        HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="296" Height="20"
+        BorderBrush="{x:Null}" Background="{x:Null}" Margin="9,0,0,0" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" FontSize="15" />
+        </Border>
+
+        <!--Code-->
+        <TextBlock HorizontalAlignment="Left" Margin="48,32,0,0" Grid.Row="1" TextWrapping="Wrap" Text="CODE" VerticalAlignment="Top" Width="60" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="44,59,1043,189" Grid.Column="1" Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="CodeTextBlock"
+        HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="20"
+        BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" FontSize="15" />
+        </Border>
+
+        <!--Description-->
+        <TextBlock HorizontalAlignment="Left" Margin="48,180,0,0" Grid.Row="1" TextWrapping="Wrap" Text="DESCRIPTIONS" VerticalAlignment="Top" Width="126" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="44,212,1043,10" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="DescriptionTextBlock"
+        HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="208"
+        BorderBrush="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" Background="{x:Null}" FontSize="15" />
+        </Border>
+
+        <!--how to use-->
+        <TextBlock HorizontalAlignment="Left" Margin="381,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" RenderTransformOrigin="0.496,0.829" Text="HOW TO USE" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="381,59,706,125" Grid.Column="1" Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="HowToUseTextBlock"
+         HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="91"
+         BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" FontSize="15" />
+        </Border>
+
+        <!--when to use-->
+        <TextBlock HorizontalAlignment="Left" Margin="381,175,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Height="25" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" RenderTransformOrigin="0.496,0.829" Text="WHEN TO USE" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="381,200,706,146" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="WhenToUseTextBlock"
+             HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="92"
+             BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" FontSize="15" />
+        </Border>
+
+        <!--others-->
+        <TextBlock HorizontalAlignment="Left" Margin="381,22,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Height="24" FontSize="15" FontWeight="Bold" Foreground="White" Grid.Column="1" RenderTransformOrigin="0.496,0.829" Text="OTHERS" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="381,48,706,10" Grid.Column="1" Grid.Row="2">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+
+            <TextBox x:Name="OthersTextBlock"
+                HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="91"
+                BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" IsReadOnly="True" FontSize="15" />
+        </Border>
+    </Grid>
+</Window>

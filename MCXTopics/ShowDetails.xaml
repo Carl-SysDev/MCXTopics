@@ -21,24 +21,49 @@
 
         <!-- COLUMNS -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" MinWidth="125" />
+            <ColumnDefinition Width="150" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <TextBlock HorizontalAlignment="Center" Margin="0,24,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Company Name :" VerticalAlignment="Top" Width="126" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" />
-        <TextBlock HorizontalAlignment="Left" Margin="66,72,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Sec #   :" VerticalAlignment="Top" Width="58" Height="21" FontSize="15" FontWeight="Bold" Foreground="White" />
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,28,0,0" Grid.Row="1" Stroke="White" VerticalAlignment="Top" Width="290" />
-        <Rectangle Grid.Column="1" HorizontalAlignment="Center" Height="160" Margin="0,72,0,0" Grid.Row="1" Stroke="White" VerticalAlignment="Top" Width="293" />
-
-        <TextBlock x:Name="Topic" Grid.Column="1" HorizontalAlignment="Center" Margin="0,28,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Foreground="White" Height="24" />
-        <TextBlock x:Name="Description" Grid.Column="1" HorizontalAlignment="Center" Margin="0,75,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Foreground="White" Height="157" />
-
-        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="0,10,152,149">
-
-            <Button Name ="Others" Grid.Column="1" Content="OTHERS"  Margin="9,0,7,0" Grid.Row="4" VerticalAlignment="Center" Height="42" FontWeight="Bold"  FontSize="15" BorderBrush="{x:Null}" Background="#00000000" Foreground="White" />
+        <!--Topic-->
+        <TextBlock HorizontalAlignment="Left" Margin="87,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" ><Run Text="TOPIC:" /><LineBreak /><Run /></TextBlock>
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="0,22,1087,206" Grid.Column="1" Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="Topic"
+             HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="230" Height="20"
+            BorderBrush="{x:Null}" Background="{x:Null}" Margin="9,0,0,0" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" FontSize="15" />
         </Border>
 
-        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="146,10,0,149" Background="#FFF95757">
+        <!--Description-->
+        <TextBlock HorizontalAlignment="Left" Margin="32,72,0,0" Grid.Row="1" TextWrapping="Wrap" Text="DESCRIPTION:" VerticalAlignment="Top" Width="108" Height="32" FontSize="15" FontWeight="Bold" Foreground="White" />
+        <Border
+            BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD" Margin="7,72,1087,10" Grid.Column="1" Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox x:Name="Description"
+            HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="208" Height="158"
+            BorderBrush="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" Background="{x:Null}" FontSize="15" />
+        </Border>
+        <!--OTHER BUTTONS-->
+        <Border Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="7,26,1194,133" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Border.RenderTransform>
+
+            <Button Name ="Others" Grid.Column="1" Content="OTHERS"  Margin="9,0,7,0" Grid.Row="4" VerticalAlignment="Center" Height="42" FontWeight="Bold"  FontSize="15" BorderBrush="{x:Null}" Background="#00000000" Foreground="White" Click="Others_Click" />
+        </Border>
+
+        <!--EXIT BUTTON-->
+        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="139,26,1054,133" Background="#FFF95757">
             <Button x:Name ="Exit"  Content="CLOSE" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="74" Height="40" FontSize="15" FontWeight="Bold"  BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" Click="Exit_Click" />
         </Border>
     </Grid>

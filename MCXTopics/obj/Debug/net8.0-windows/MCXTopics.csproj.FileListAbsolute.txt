@@ -45,3 +45,6 @@ C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\bin\Debug\net8.0-windows\ru
 C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\MCXTopics.csproj.Up2Date
 C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\ShowDetails.g.cs
 C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\ShowDetails.baml
+C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\MCXTopics.sourcelink.json
+C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\OthersDetails.g.cs
+C:\Users\csmadriaga\source\repos\MCXTopics\MCXTopics\obj\Debug\net8.0-windows\OthersDetails.baml

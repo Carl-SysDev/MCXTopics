@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +11,28 @@
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\othersdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\othersdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +42,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "OthersDetails.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml.cs",
+              "RelativeDocumentMoniker": "MCXTopics\\OthersDetails.xaml.cs",
+              "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml.cs",
+              "RelativeToolTip": "MCXTopics\\OthersDetails.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T01:41:26.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OthersDetails.xaml",
+              "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml",
+              "RelativeDocumentMoniker": "MCXTopics\\OthersDetails.xaml",
+              "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml",
+              "RelativeToolTip": "MCXTopics\\OthersDetails.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-08T01:35:22.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ShowDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\ShowDetails.xaml.cs",
               "RelativeDocumentMoniker": "MCXTopics\\ShowDetails.xaml.cs",
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\ShowDetails.xaml.cs",
               "RelativeToolTip": "MCXTopics\\ShowDetails.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBwAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwBkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T09:17:40.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ShowDetails.xaml",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\ShowDetails.xaml",
               "RelativeDocumentMoniker": "MCXTopics\\ShowDetails.xaml",
@@ -63,20 +95,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Topics.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\Classes\\Topics.cs",
               "RelativeDocumentMoniker": "MCXTopics\\Classes\\Topics.cs",
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\Classes\\Topics.cs",
               "RelativeToolTip": "MCXTopics\\Classes\\Topics.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T07:12:49.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T07:12:49.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Search.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\Classes\\Search.cs",
               "RelativeDocumentMoniker": "MCXTopics\\Classes\\Search.cs",
@@ -84,12 +115,11 @@
               "RelativeToolTip": "MCXTopics\\Classes\\Search.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T07:13:07.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T07:13:07.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MCXTopics\\MainWindow.xaml",
@@ -101,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MCXTopics\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\MainWindow.xaml.cs",
               "RelativeToolTip": "MCXTopics\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwF4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T06:22:57.708Z",
               "EditorCaption": ""

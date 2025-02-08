@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -24,7 +25,12 @@ namespace MCXTopics
         public MainWindow()
         {
             InitializeComponent();
+            InitializeMainWindow();
+        }
 
+        //INITIALIZEMAINWINDOW
+        private void InitializeMainWindow()
+        {
             //GET THE PATH OF UPLODED FILES
             string uploadDirectory = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "uploads");
 
@@ -36,6 +42,9 @@ namespace MCXTopics
 
             //GET THE EXCEL FILES
             string[] excelFiles = System.IO.Directory.GetFiles(uploadDirectory, "*.xlsx", System.IO.SearchOption.AllDirectories);
+
+            //CLEAR THE LIST BOX FIRST BEFORE ADDING THE FILES
+            FileUploads.Items.Clear();
 
             //SHOWING THE ALL UPLOADED EXCEL FILES IN FILEUPLOADSLISTBOX
             foreach (string file in excelFiles)
@@ -51,6 +60,8 @@ namespace MCXTopics
             {
                 using (var package = new ExcelPackage(file))
                 {
+                    // Set the license context para to sa na install na package
+                    ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
                     var workbook = package.Workbook;
 
                     // Iterate over all worksheets in the workbook
@@ -99,6 +110,7 @@ namespace MCXTopics
                 ShowDetails showDetails = new ShowDetails();
                 showDetails.TopicTextBlock.Text = selectedTopic.Topic;
                 showDetails.DescriptionTextBlock.Text = selectedTopic.Description;
+                showDetails.Tag = selectedTopic; // Pass the entire object using the Tag property
                 showDetails.ShowDialog();
             }
         }
@@ -106,7 +118,6 @@ namespace MCXTopics
         //FILES UPLOADED
         private void FileUploads_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MessageBox.Show("You have selected: " + FileUploads.SelectedItem);
         }
 
         //RECOMMENDED TOPICS
@@ -207,8 +218,8 @@ namespace MCXTopics
                     FileUploads.Items.Add(fileName);
                 }
 
-                //PASS THE EXTRACTED DATA TO THE GLOBAL COMPANIES LIST
-                this.topics = topics;
+                //PASS THE EXTRACTED DATA TO THE GLOBAL TOPIC LIST
+                this.topics = this.topics.Concat(topics).ToList();
 
                 //MESSAGE UPLOAD SUCESSFULLY
                 MessageBox.Show("Upload successful.", "Upload", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -234,9 +245,6 @@ namespace MCXTopics
                 return;
             }
 
-            //UPDATE VALUE OF SEARCH BASED ON HEADER
-            //CompanyHeader.Text = "SEARCH: " + searchText;
-
             //INSTANTIATE THE SEARCH CLASS
             Search search = new Search(searchText);
 
@@ -260,11 +268,82 @@ namespace MCXTopics
             }
         }
 
+        //SEARCH CLEAR HANDLER
         private void clearSearch_Click(object sender, RoutedEventArgs e)
         {
             SearchBox.Clear();
             SearchBox.Text = "Search...";
             SearchBox.Foreground = Brushes.DarkSlateGray;
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (FileUploads.SelectedItem != null)
+            {
+                // Confirmation message
+                var result = MessageBox.Show("Are you sure you want to delete the selected file?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    string selectedFile = FileUploads.SelectedItem.ToString();
+
+                    //GET DIRECTORY OF UPLOADED FILES
+                    string uploadDirectory = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "uploads");
+
+                    //GETH THE FULL PATH OF SELECTED FILE
+                    string filePath = System.IO.Path.Combine(uploadDirectory, selectedFile);
+
+                    //DELETE THE FILE
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+
+                        //REMOVE THE FILE FROM THE LIST BOX
+                        FileUploads.Items.Remove(selectedFile);
+
+                        SearchBox.Clear();
+                        SearchBox.Text = "Search...";
+                        SearchBox.Foreground = Brushes.DarkSlateGray;
+
+                        InitializeMainWindow();
+                        MessageBox.Show("File deleted successfully!", "Delete File", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("File not found!", "Delete File", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
+        }
+
+        //CLEAR ALL FILES UPLOADED
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            //MESSAGE BOX FOR DELETE CONFIRMATION
+            var result = MessageBox.Show("Are you sure you want to delete all uploaded files?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                //GET DIRECTORY OF UPLOADED FILES
+                string uploadDirectory = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "uploads");
+
+                //GET ALL FILES IN THE UPLOAD DIRECTORY
+                string[] files = System.IO.Directory.GetFiles(uploadDirectory);
+
+                //DELETE ALL FILES
+                foreach (string file in files)
+                {
+                    System.IO.File.Delete(file);
+                }
+
+                SearchBox.Clear();
+                SearchBox.Text = "Search...";
+                SearchBox.Foreground = Brushes.DarkSlateGray;
+
+                //REMOVE ALL FILES FROM THE LIST BOX
+                InitializeMainWindow();
+                MessageBox.Show("All files deleted successfully!", "Clear Files", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

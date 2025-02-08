@@ -1,0 +1,170 @@
+﻿<Window x:Class="MCXTopics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MCXTopics"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+
+    <Window.Background>
+        <ImageBrush ImageSource="/purple.jpg" />
+    </Window.Background>
+    <Grid>
+
+        <!-- COLUMNS -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+
+        <!-- ROWS -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="70" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <!-- SEARCH BAR-->
+        <Border
+             BorderThickness="1" CornerRadius="20" BorderBrush="#98FBCD"
+             Grid.Column="2"
+             Grid.Row="2"
+            VerticalAlignment="Top" Margin="0,18,0,0">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <TextBox Name="SearchBox"
+             TextWrapping="Wrap"
+            Text="Search..."
+            Foreground="DarkSlateGray"
+
+             FontSize="25"
+             VerticalAlignment="Center"
+              Width="Auto"
+              Height="37"
+              GotFocus="SearchBox_GotFocus"
+              LostFocus="SearchBox_LostFocus" BorderBrush="#00000000" Margin="9,0,9,0" SelectionBrush="#00000000" Background="#00000000" />
+        </Border>
+
+        <!-- SEARCH RESULT-->
+        <Border BorderThickness="1" CornerRadius="15" BorderBrush="#98FBCD" Grid.Column="2" Grid.Row="3" Margin="0,0,0,21">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <ListBox Name="SearchResultsListBox" Margin="9,35,9,9" SelectionChanged="SearchResultsListBox_SelectionChanged"  Grid.Column="1"  BorderThickness="0" BorderBrush="Transparent" Background="Transparent" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border CornerRadius="15" Opacity="1" Width="524" Height="58">
+                            <Border.Background>
+                                <SolidColorBrush Color="#FF0B2D5C" Opacity="0.6" />
+                            </Border.Background>
+                            <StackPanel Width="618" Height="49" Margin="0,0,-94,0">
+                                <StackPanel.Background>
+                                    <SolidColorBrush Color="#FF0B2D5C" Opacity="0.25" />
+                                </StackPanel.Background>
+                                <TextBlock Text="{Binding Code, StringFormat='Code: {0}'}"  FontSize="16" FontWeight="Bold" Height="20" Width="606" FontFamily="Bahnschrift SemiBold SemiCondensed" HorizontalAlignment="Center">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="#FFFFEDED" Opacity="1" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+                                <TextBlock Text="{Binding Topic, StringFormat=Topic: \{0\}}"  FontSize="20"  Height="26" Width="602" Foreground="#FFE6DFDF" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <!-- RECOMMENDED TOPICS-->
+        <ListBox Name="RecommendTopics" Margin="10,36,10,-290" SelectionChanged="RecommedTopics_SelectionChanged"  Grid.Column="1" Grid.Row="3" BorderThickness="0" BorderBrush="Transparent" Background="Transparent" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </ListBox.RenderTransform>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border CornerRadius="15" Opacity="1" Width="162" Height="45">
+                        <Border.Background>
+                            <SolidColorBrush Color="#FF0B2D5C" Opacity="0.6" />
+                        </Border.Background>
+                        <StackPanel Height="35">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="#FF0B2D5C" Opacity="0.25" />
+                            </StackPanel.Background>
+                            <TextBlock Text="TOPIC"  FontSize="20" FontWeight="Bold" Height="33" Width="48" FontFamily="Bahnschrift SemiBold SemiCondensed" HorizontalAlignment="Center">
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="#FFFFEDED" Opacity="1" />
+                                </TextBlock.Foreground>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- FILE UPLOADS-->
+        <Border BorderThickness="1" CornerRadius="10" BorderBrush="#98FBCD" Grid.Column="3" Grid.Row="3" Margin="17,0,10,103">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.5" />
+            </Border.Background>
+            <ListBox Name="FileUploads"  d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top" Margin="-1,48,9,0" BorderThickness="1,1,1,1"  SelectionChanged="FileUploads_SelectionChanged" Height="249" Grid.RowSpan="2" Background="Transparent" BorderBrush="Transparent">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding}" FontSize="15" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <!-- EXIT BUTTON-->
+        <Border Grid.Column="3" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="169,0,1,45" Background="#FFF95757" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Button x:Name ="Exit"  Content="X" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="30" Height="30" FontSize="15" FontWeight="Bold"  BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" Click="Exit_Click" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+        </Border>
+
+        <!-- UPLOAD -->
+        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="15,18,23,15">
+            <Button Name ="UploadButton"  Content="UPLOAD" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="74" Height="40" FontSize="15" FontWeight="Bold" Click="UploadButton_Click" BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+        </Border>
+
+        <!-- SEARCH BUTTON -->
+        <Border Grid.Column="3" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="20,18,11,13">
+            <Button Name="SearchButton" Grid.Column="3" Content="SEARCH" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="74" Height="39" Foreground="White" FontWeight="Bold"  FontSize="15" Click="SearchButton_Click" Cursor="Hand" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+        </Border>
+
+        <!-- CLEAR BUTTON -->
+        <Button Name="clearSearch"  Grid.Column="2" Content="X" HorizontalAlignment="Left" Margin="500,21,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="15" Background="#00000000" FontWeight="Bold" BorderBrush="#00000000" Click="clearSearch_Click" Height="34" Width="40">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Button>
+
+        <!--RESULT Found-->
+        <TextBlock Name="ResultFound" Grid.Column="2" HorizontalAlignment="Left" Margin="10,9,0,0" Grid.Row="3" TextWrapping="Wrap" Text="RESULTS : " VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="169" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+    </Grid>
+</Window>

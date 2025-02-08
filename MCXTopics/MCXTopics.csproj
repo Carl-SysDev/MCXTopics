@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image-removebg-preview %284%29.png" />
     <None Remove="purple.jpg" />
   </ItemGroup>
 
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="image-removebg-preview (4).png" />
     <Resource Include="purple.jpg" />
   </ItemGroup>
 

@@ -49,7 +49,7 @@
             BorderBrush="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" SelectionTextBrush="#00000000" IsReadOnly="True" Background="{x:Null}" FontSize="15" />
         </Border>
         <!--OTHER BUTTONS-->
-        <Border Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="7,26,1194,133" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+        <Border Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="7,6,1194,153" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1" />
@@ -59,12 +59,12 @@
                 </TransformGroup>
             </Border.RenderTransform>
 
-            <Button Name ="Others" Grid.Column="1" Content="OTHERS"  Margin="9,0,7,0" Grid.Row="4" VerticalAlignment="Center" Height="42" FontWeight="Bold"  FontSize="15" BorderBrush="{x:Null}" Background="#00000000" Foreground="White" Click="Others_Click" />
+            <Button Name ="Others" Grid.Column="1" Content="OTHERS"  Margin="9,0,7,0" Grid.Row="4" VerticalAlignment="Center" Height="42" FontWeight="Bold"  FontSize="15" BorderBrush="{x:Null}" Background="#00000000" Foreground="White" Click="Others_Click" Cursor="Hand" />
         </Border>
 
         <!--EXIT BUTTON-->
-        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="139,26,1054,133" Background="#FFF95757">
-            <Button x:Name ="Exit"  Content="CLOSE" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="74" Height="40" FontSize="15" FontWeight="Bold"  BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" Click="Exit_Click" />
+        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="139,6,1054,153" Background="#FFF95757">
+            <Button x:Name ="Exit"  Content="CLOSE" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="116" Height="40" FontSize="15" FontWeight="Bold"  BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" Click="Exit_Click" />
         </Border>
     </Grid>
 </Window>

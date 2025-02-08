@@ -110,5 +110,10 @@
                 HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="286" Height="91"
                 BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="#00000000" FontFamily="Bahnschrift SemiBold SemiCondensed" IsReadOnly="True" FontSize="15" />
         </Border>
+
+        <!--EXIT BUTTON-->
+        <Border Grid.Column="1" BorderThickness="1" CornerRadius="20" BorderBrush="White" Margin="685,5,631,253" Background="#FFF95757" Grid.RowSpan="2">
+            <Button x:Name ="Exit"  Content="CLOSE" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="74" Height="40" FontSize="15" FontWeight="Bold"  BorderBrush="#00000000" Cursor="Hand" Foreground="#FFFBFBFB" Background="#00000000" Click="Exit_Click" />
+        </Border>
     </Grid>
 </Window>

@@ -7,32 +7,36 @@
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\othersdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\othersdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\othersdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\classes\\topics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\showdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|c:\\users\\csmadriaga\\source\\repos\\mcxtopics\\mcxtopics\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0979318F-FFDD-409B-AE9F-C23DFAF56BE3}|MCXTopics\\MCXTopics.csproj|solutionrelative:mcxtopics\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +46,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\App.xaml",
+              "RelativeDocumentMoniker": "MCXTopics\\App.xaml",
+              "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\App.xaml",
+              "RelativeToolTip": "MCXTopics\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-08T06:15:19.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OthersDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml.cs",
               "RelativeDocumentMoniker": "MCXTopics\\OthersDetails.xaml.cs",
@@ -54,22 +70,24 @@
               "RelativeToolTip": "MCXTopics\\OthersDetails.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T01:41:26.818Z"
+              "WhenOpened": "2025-02-08T01:41:26.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "OthersDetails.xaml",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml",
               "RelativeDocumentMoniker": "MCXTopics\\OthersDetails.xaml",
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\OthersDetails.xaml",
               "RelativeToolTip": "MCXTopics\\OthersDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T01:35:22.712Z"
+              "WhenOpened": "2025-02-08T01:35:22.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ShowDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\ShowDetails.xaml.cs",
               "RelativeDocumentMoniker": "MCXTopics\\ShowDetails.xaml.cs",
@@ -77,7 +95,8 @@
               "RelativeToolTip": "MCXTopics\\ShowDetails.xaml.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAwwBkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:17:40.294Z"
+              "WhenOpened": "2025-02-07T09:17:40.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,11 +107,12 @@
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\ShowDetails.xaml",
               "RelativeToolTip": "MCXTopics\\ShowDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-07T09:00:58.771Z"
+              "WhenOpened": "2025-02-07T09:00:58.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Topics.cs",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\Classes\\Topics.cs",
               "RelativeDocumentMoniker": "MCXTopics\\Classes\\Topics.cs",
@@ -100,7 +120,8 @@
               "RelativeToolTip": "MCXTopics\\Classes\\Topics.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAiwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T07:12:49.61Z"
+              "WhenOpened": "2025-02-07T07:12:49.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -112,11 +133,12 @@
               "RelativeToolTip": "MCXTopics\\Classes\\Search.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T07:13:07.701Z"
+              "WhenOpened": "2025-02-07T07:13:07.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MCXTopics\\MainWindow.xaml",
@@ -134,7 +156,7 @@
               "RelativeDocumentMoniker": "MCXTopics\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\csmadriaga\\source\\repos\\MCXTopics\\MCXTopics\\MainWindow.xaml.cs",
               "RelativeToolTip": "MCXTopics\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEEBAAAAAAAAAAAcwFQBAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAADwv5QAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T06:22:57.708Z",
               "EditorCaption": ""

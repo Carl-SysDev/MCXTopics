@@ -92,13 +92,19 @@ namespace MCXTopics
             //PASS THE EXTRACTED DATA TO THE GLOBAL COMPANIES LIST
             this.topics = topics;
 
-            //DISPLAY ALL COMPANY NAMES IN SEARCH LISTBOX
+            //DISPLAY ALL TOPICS NAMES IN SEARCH LISTBOX
             SearchResultsListBox.ItemsSource = topics;
 
             //GET HOW MANT SEARCH FOUND AND CONVERT IT TO StrING
             SearchResultCount = topics.Count.ToString();
 
             ResultFound.Text = "RESULTS: " + SearchResultCount;
+
+            //GET DISTINCT CODES
+            var distinctCodes = topics.Select(t => t.Code).Distinct();
+
+            //SET CODES IN RECOMMEDATIONLIST
+            RecommendTopics.ItemsSource = distinctCodes;
         }
 
         // SEARCHBOX RESULTS
@@ -123,6 +129,23 @@ namespace MCXTopics
         //RECOMMENDED TOPICS
         private void RecommedTopics_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (RecommendTopics.SelectedItem != null)
+            {
+                string selectedCode = RecommendTopics.SelectedItem.ToString();
+                //FILTER THE TOPICS BASED ON SELECTED CODE
+                var recommendedTopics = topics.Where(t => t.Code == selectedCode).ToList();
+                //DISPLAY THE RECOMMENDED TOPICS
+                SearchResultsListBox.ItemsSource = recommendedTopics;
+                //GET HOW MANT SEARCH FOUND AND CONVERT IT TO StrING
+                SearchResultCount = recommendedTopics.Count.ToString();
+                ResultFound.Text = "RESULTS: " + SearchResultCount;
+            }
+            else
+            {
+                // Handle the case when SelectedItem is null
+                // For example, clear the SearchResultsListBox
+                SearchResultsListBox.ItemsSource = null;
+            }
         }
 
         //PLACEHOLDER IF CLICK
@@ -219,18 +242,20 @@ namespace MCXTopics
                 }
 
                 //PASS THE EXTRACTED DATA TO THE GLOBAL TOPIC LIST
-                this.topics = this.topics.Concat(topics).ToList();
+                //this.topics = this.topics.Concat(topics).ToList();
 
                 //MESSAGE UPLOAD SUCESSFULLY
                 MessageBox.Show("Upload successful.", "Upload", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                //DISPLAY ALL COMPANY NAMES IN SEARCH LISTBOX
-                SearchResultsListBox.ItemsSource = topics;
+                InitializeMainWindow();
+
+                //DISPLAY ALL TOPICS NAMES IN SEARCH LISTBOX
+                // SearchResultsListBox.ItemsSource = topics;
 
                 //GET HOW MANT SEARCH FOUND AND CONVERT IT TO StrING
-                SearchResultCount = topics.Count.ToString();
+                // SearchResultCount = topics.Count.ToString();
 
-                ResultFound.Text = "RESULTS: " + SearchResultCount;
+                // ResultFound.Text = "RESULTS: " + SearchResultCount;
             }
         }
 

@@ -68,10 +68,10 @@ namespace MCXTopics
                     foreach (ExcelWorksheet worksheet in workbook.Worksheets)
                     {
                         //CHECK IF THE WORKSHEET HAS LESS OR MORE THAN 6 COLUMNS
-                        if (worksheet.Dimension.End.Column > 6)
+                        if (worksheet.Dimension.End.Column != 6)
                         {
-                            MessageBox.Show("Please Upload Worksheet with this Column format:\nCompanyName|SecNum|LicenseNumber|DateRegistered|TaxpayerName|Violation", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
-                            continue;
+                            MessageBox.Show("Please Upload Worksheet with this Column format:\nCode|Topic|Description|HowToUse|WhenToUse|Others", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
+                            break;
                         }
 
                         for (int row = 2; row <= worksheet.Dimension.End.Row; row++) //START FROM ROW 2, ASSUMING ROW 1 IS THE HEADER
@@ -211,41 +211,43 @@ namespace MCXTopics
                             //CHECK IF THE WORKSHEET HAS LESS OR MORE THAN 6 COLUMNS
                             if (worksheet.Dimension.End.Column > 6)
                             {
-                                MessageBox.Show("Please Upload Worksheet with this Column format:\nCompanyName|SecNum|LicenseNumber|DateRegistered|TaxpayerName|Violation", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
-                                continue;
+                                MessageBox.Show("Please Upload Worksheet with this Column format:\nCode|Topic|Description|HowToUse|WhenToUse|Others", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
+                                break;
                             }
-
-                            //EXTRACT DATA FROM EXCEL
-                            for (int row = 2; row <= worksheet.Dimension.End.Row; row++) //START FROM ROW 2, ASSUMING ROW 1 IS THE HEADER
+                            else
                             {
-                                //IF CELL IS NULL, ASSIGN NONE USING TERNARY
-                                var code = worksheet.Cells[row, 1].Value?.ToString() ?? "NONE";
-                                var topic = worksheet.Cells[row, 2].Value?.ToString() ?? "NONE";
-                                var description = worksheet.Cells[row, 3].Value?.ToString() ?? "NONE";
-                                var howToUse = worksheet.Cells[row, 4].Value?.ToString() ?? "NONE";
-                                var whenToUse = worksheet.Cells[row, 5].Value?.ToString() ?? "NONE";
-                                var others = worksheet.Cells[row, 6].Value?.ToString() ?? "NONE";
+                                //EXTRACT DATA FROM EXCEL
+                                for (int row = 2; row <= worksheet.Dimension.End.Row; row++) //START FROM ROW 2, ASSUMING ROW 1 IS THE HEADER
+                                {
+                                    //IF CELL IS NULL, ASSIGN NONE USING TERNARY
+                                    var code = worksheet.Cells[row, 1].Value?.ToString() ?? "NONE";
+                                    var topic = worksheet.Cells[row, 2].Value?.ToString() ?? "NONE";
+                                    var description = worksheet.Cells[row, 3].Value?.ToString() ?? "NONE";
+                                    var howToUse = worksheet.Cells[row, 4].Value?.ToString() ?? "NONE";
+                                    var whenToUse = worksheet.Cells[row, 5].Value?.ToString() ?? "NONE";
+                                    var others = worksheet.Cells[row, 6].Value?.ToString() ?? "NONE";
 
-                                topics.Add(new Topics(code, topic, description, howToUse, whenToUse, others));
+                                    topics.Add(new Topics(code, topic, description, howToUse, whenToUse, others));
+                                }
+
+                                //COPY THE FILE OR UPLOAD THE FILE IN MY DIRECTORY
+                                string fileName = System.IO.Path.GetFileName(file);
+                                string destinationPath = System.IO.Path.Combine(uploadDirectory, fileName);
+
+                                System.IO.File.Copy(file, destinationPath, true); //OVERWRITE FILE IF EXISTS
+
+                                //SHOW ALL UPLOADED FILES IN UPLOADS LISTBOX
+                                FileUploads.Items.Add(fileName);
+
+                                //MESSAGE UPLOAD SUCESSFULLY
+                                MessageBox.Show("Upload successful.", "Upload", MessageBoxButton.OK, MessageBoxImage.Information);
                             }
                         }
                     }
-
-                    //COPY THE FILE OR UPLOAD THE FILE IN MY DIRECTORY
-                    string fileName = System.IO.Path.GetFileName(file);
-                    string destinationPath = System.IO.Path.Combine(uploadDirectory, fileName);
-
-                    System.IO.File.Copy(file, destinationPath, true); //OVERWRITE FILE IF EXISTS
-
-                    //SHOW ALL UPLOADED FILES IN UPLOADS LISTBOX
-                    FileUploads.Items.Add(fileName);
                 }
 
                 //PASS THE EXTRACTED DATA TO THE GLOBAL TOPIC LIST
                 //this.topics = this.topics.Concat(topics).ToList();
-
-                //MESSAGE UPLOAD SUCESSFULLY
-                MessageBox.Show("Upload successful.", "Upload", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 InitializeMainWindow();
 

@@ -208,10 +208,17 @@ namespace MCXTopics
                         // Iterate over all worksheets in the workbook
                         foreach (ExcelWorksheet worksheet in workbook.Worksheets)
                         {
-                            //CHECK IF THE WORKSHEET HAS LESS OR MORE THAN 6 COLUMNS
-                            if (worksheet.Dimension.End.Column > 6)
+                            //CHECK IF THE FIRST ROW HAS THE EXACT COLUMN HEADERS
+                            string[] expectedHeaders = new string[] { "Code", "Topic", "Description", "How to Use", "When to Use", "Other" };
+                            string[] actualHeaders = new string[6];
+                            for (int i = 1; i <= 6; i++)
                             {
-                                MessageBox.Show("Please Upload Worksheet with this Column format:\nCode|Topic|Description|HowToUse|WhenToUse|Others", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
+                                actualHeaders[i - 1] = worksheet.Cells[1, i].Value?.ToString() ?? "";
+                            }
+
+                            if (!expectedHeaders.SequenceEqual(actualHeaders))
+                            {
+                                MessageBox.Show("Please Upload Worksheet with the exact column headers:\nCode|Topic|Description|How To Use|When To Use|Other", "Invalid Worksheet Format", MessageBoxButton.OK, MessageBoxImage.Error);
                                 break;
                             }
                             else

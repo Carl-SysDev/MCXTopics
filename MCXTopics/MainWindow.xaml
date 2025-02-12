@@ -31,7 +31,7 @@
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="Header" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="39" Width="Auto" FontSize="40" FontWeight="Bold" Foreground="White" Margin="181,0,181,0" FontFamily="Bahnschrift SemiBold SemiCondensed" Text="MSC TOPICS">
+        <TextBlock x:Name="Header" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="39" Width="Auto" FontSize="40" FontWeight="Bold" Foreground="White" Margin="181,0,181,0" FontFamily="Bahnschrift SemiBold SemiCondensed" Text="MCS TOPICS">
             <TextBlock.Background>
                 <ImageBrush />
             </TextBlock.Background>
@@ -119,6 +119,7 @@
                 <SolidColorBrush Color="White" Opacity="0.5" />
             </Border.Background>
             <ListBox Name="FileUploads"  d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top" Margin="-1,48,9,0" BorderThickness="1,1,1,1"  SelectionChanged="FileUploads_SelectionChanged" Height="217" Grid.RowSpan="2" Background="Transparent" BorderBrush="Transparent" Cursor="Hand">
+
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Vertical">
